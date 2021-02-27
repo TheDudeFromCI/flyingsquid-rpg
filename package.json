@@ -1,38 +1,36 @@
 {
-  "name": "mineflayer-plugin-template",
-  "version": "1.0.0",
-  "description": "A template repository for creating Mineflayer plugins using Typescript.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "name": "flyingsquid-rpg",
+  "version": "0.1.0",
+  "description": "An RPG plugin for FlyingSquid.",
+  "main": "src/index.js",
   "scripts": {
-    "prepare": "tsc && require-self",
-    "clean": "rm -rf lib",
-    "test": "test"
+    "prepare": "require-self",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheDudeFromCI/mineflayer-plugin-template.git"
+    "url": "git+https://github.com/TheDudeFromCI/flyingsquid-rpg.git"
   },
   "keywords": [
-    "mineflayer",
+    "flyingsquid",
     "plugin",
-    "template"
+    "minecraft",
+    "rpg"
   ],
   "author": "TheDudeFromCI",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheDudeFromCI/mineflayer-plugin-template/issues"
+    "url": "https://github.com/TheDudeFromCI/flyingsquid-rpg/issues"
   },
-  "homepage": "https://github.com/TheDudeFromCI/mineflayer-plugin-template#readme",
+  "homepage": "https://github.com/TheDudeFromCI/flyingsquid-rpg#readme",
   "dependencies": {
-    "mineflayer": "^2.21.0"
+    "flying-squid": "^1.4.0",
+    "standard": "^16.0.3"
   },
   "devDependencies": {
-    "@types/node": "14.14.5",
-    "require-self": "0.2.3",
-    "typescript": "4.0.5"
+    "require-self": "0.2.3"
   },
   "files": [
-    "lib/**/*"
+    "src/**/*"
   ]
 }
