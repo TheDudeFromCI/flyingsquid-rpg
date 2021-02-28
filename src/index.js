@@ -1,5 +1,10 @@
+const playerStats = require('./playerStats')
+
+/**
+ * Initializes all player related events and handlers.
+ * 
+ * @param {*} player - The player to initialize.
+ */
 module.exports.player = function (player) {
-  player.on('spawned', () => {
-    player.chat('RPG Server spawned.')
-  })
+  playerStats(player)
 }
